@@ -1,0 +1,63 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Add A New Cafe{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+      <form method='POST'>
+      
+      <h1>Add a new cafe into the database</h1>
+      {{ form.csrf_token }}
+      {{ form.cafe_name.label }} <br> {{ form.cafe_name(size=35) }}
+      <br><br>
+      {{ form.cafe_location.label }} <br> {{ form.cafe_location(size=35) }}
+      
+      {% if form.cafe_location.errors %}
+        {% for error in form.cafe_location.errors %}
+          <span> {{ error }}</span>
+        {% endfor %}
+      {% endif %}
+      
+      <br><br>
+      {{ form.cafe_open_time.label }} <br> {{ form.cafe_open_time(size=10) }}
+      
+      {% if form.cafe_open_time.errors %}
+        {% for error in form.cafe_open_time.errors %}
+          <span> {{ error }}</span>
+        {% endfor %}
+      {% endif %}
+      
+      <br><br>
+      {{ form.cafe_close_time.label }} <br> {{ form.cafe_close_time(size=10) }}
+      <br><br>
+      
+      {% if form.cafe_close_time.errors %}
+        {% for error in form.cafe_close_time.errors %}
+          <span> {{ error }}</span>
+        {% endfor %}
+      {% endif %}
+      
+      {{ form.cafe_coffe_rating.label }} <br> {{ form.cafe_coffe_rating(size=4) }}
+      <br><br>
+      {{ form.cafe_wifi_rating.label }} <br> {{ form.cafe_wifi_rating(size=4) }}
+      <br><br>
+      {{ form.cafe_power_rating.label }} <br> {{ form.cafe_power_rating(size=4) }}
+      
+      <br><br><br>
+        {{ form.submit }}
+      </form>
+
+      
+	  <div class='col text-center'>
+        <div class='grid col-4 mt-2 mx-auto'>
+      <a class="btn btn-warning btn-lg" href="/" role="button">See All Cafes</a>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
