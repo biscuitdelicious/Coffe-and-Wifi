@@ -1,4 +1,4 @@
 # Caffe-and-Wifi
 Essential kit for a programmer
 
-![](https://github.com/Caffe-and-Wifi/Ignore/Coffe and Wifi.gif)
+If you're really curious: https://ibb.co/pXndqGk
