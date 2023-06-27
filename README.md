@@ -19,4 +19,10 @@ The easiest way to see **how the site works** is by the **link above it**, but t
 3. Enjoy! Everytime you'll have to work and drink some coffe, you can check the list of places to savor a good cup of coffee. 
 
 
-<br>
+<br> <br>
+
+### What did I learn from this?  
+
+* Get to know the nuts and bolts of WTForms.
+* Learn how to set up and use Flask like a ~~pro~~ developer.
+* Understand how to save and display data on a website.
