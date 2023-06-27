@@ -26,7 +26,7 @@ class CafeForm(FlaskForm):
                                                 validators.InputRequired()])
     cafe_wifi_rating = SelectField('Wifi Rating', choices=['💪', '💪💪', '💪💪💪', '💪💪💪💪'], validators=[DataRequired(),
                                                                                                   validators.InputRequired()])
-    cafe_power_rating = SelectField('Power Rating', choices=['🔌', '🔌', '🔌🔌🔌', '🔌🔌🔌🔌'], validators=[DataRequired(),
+    cafe_power_rating = SelectField('Power Rating', choices=['🔌', '🔌🔌', '🔌🔌🔌', '🔌🔌🔌🔌'], validators=[DataRequired(),
                                                                                                    validators.InputRequired()])
     submit = SubmitField('Add')
 
