@@ -1,4 +1,4 @@
-# Caffe-and-Wifi
+# Coffe-and-Wifi
 Essential kit for a programmer
 
 If you're really curious **how the site works**: https://ibb.co/bj4CPJt
